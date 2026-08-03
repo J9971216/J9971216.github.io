@@ -45,7 +45,7 @@ const SITE_CONTENT = {
       bullets: [
         { en: "Built an automated data-governance system on Apache Airflow that detects orphaned datasets across a large AWS Redshift and Glue warehouse by computing a dependency graph of live consumers, surfacing 2,000+ orphaned tables (100+ TB reclaimable) per monthly run, replacing what previously required manual lineage tracing across hundreds of pipelines.", zh: "在 Apache Airflow 上构建自动化数据治理系统，通过计算活跃消费者的依赖关系图，检测 AWS Redshift 与 Glue 数据仓库中的孤立数据集，每月运行可发现 2000+ 张孤立表（可回收存储 100+ TB），此前这项工作需要跨数百条流水线手动追溯血缘。" },
         { en: "Integrated an LLM agent on AWS Bedrock that triages each run into a confident-drop set (91% of cases) and a human-review set with plain-language rationales. The system only proposes cleanup via change reviews and SQL, never deletes data autonomously.", zh: "接入基于 AWS Bedrock 的 LLM 智能体，将每次运行结果分诊为高置信度可删除集合（约 91%）与需人工复核集合，并附带通俗易懂的判断依据。系统仅通过变更评审和 SQL 提出清理建议，绝不自动删除数据。" },
-        { en: "Delivered the project on a newly adopted Airflow platform, partnering with my mentor and teammates to validate infrastructure and permissions, then led the next phase: a reversible grace-period deprecation design for safely recoverable cleanup.", zh: "在团队新采用的 Airflow 平台上交付该项目，与导师和同事密切协作完成平台上手、基础设施与权限校验，并主导下一阶段工作：可安全恢复的宽限期下线设计。" },
+        { en: "Delivered the project on a newly adopted Airflow platform, then led the next phase: a reversible grace-period deprecation design for safely recoverable cleanup.", zh: "在团队新采用的 Airflow 平台上交付该项目，并主导下一阶段工作：可安全恢复的宽限期下线设计。" },
         { en: "Contributed to the team's autonomous code-review agent beyond my own project, diagnosing and fixing several worker defects.", zh: "在自己项目之外，也为团队的自动化代码评审智能体（一个自动认领任务并生成代码评审的守护进程）做出贡献，诊断并修复了多个 worker 缺陷。" }
       ]
     },
