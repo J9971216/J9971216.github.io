@@ -372,13 +372,6 @@ main {
   margin: 0;
 }
 
-.timeline-item:nth-child(3n+2) .timeline-role { color: var(--accent-2-strong); }
-.timeline-item:nth-child(3n+3) .timeline-role { color: var(--accent-3-strong); }
-.timeline-item:nth-child(3n+2)::before,
-.timeline-item:nth-child(3n+2) .badge { background: linear-gradient(90deg, var(--accent-2), var(--accent-3)); }
-.timeline-item:nth-child(3n+3)::before,
-.timeline-item:nth-child(3n+3) .badge { background: linear-gradient(90deg, var(--accent-3), var(--accent)); }
-
 .timeline-meta {
   display: flex;
   flex-direction: column;
@@ -464,13 +457,6 @@ main {
   letter-spacing: 0.04em;
 }
 
-.project-card:nth-child(3n+2) .project-tag { color: var(--accent-2-strong); }
-.project-card:nth-child(3n+3) .project-tag { color: var(--accent-3-strong); }
-.project-card:nth-child(3n+2)::before { background: linear-gradient(90deg, var(--accent-2), var(--accent-3)); }
-.project-card:nth-child(3n+3)::before { background: linear-gradient(90deg, var(--accent-3), var(--accent)); }
-.project-card:nth-child(3n+2):hover { border-color: var(--accent-2); }
-.project-card:nth-child(3n+3):hover { border-color: var(--accent-3); }
-
 .project-title {
   font-size: 1.05rem;
   font-weight: 700;
@@ -505,18 +491,6 @@ main {
 
 .chip:hover {
   transform: translateY(-1px);
-}
-
-.chip:nth-of-type(3n+2) {
-  background: rgba(236, 72, 153, 0.08);
-  color: var(--accent-2-strong);
-  border-color: rgba(236, 72, 153, 0.22);
-}
-
-.chip:nth-of-type(3n+3) {
-  background: rgba(124, 58, 237, 0.08);
-  color: var(--accent-3-strong);
-  border-color: rgba(124, 58, 237, 0.22);
 }
 
 /* Skills */
