@@ -115,6 +115,16 @@ const SITE_CONTENT = {
     }
   ],
 
+  // Placeholder tiles until real photos + captions are added.
+  travel: [
+    { src: null, location: { en: "Photo coming soon", zh: "照片待添加" } },
+    { src: null, location: { en: "Photo coming soon", zh: "照片待添加" } },
+    { src: null, location: { en: "Photo coming soon", zh: "照片待添加" } },
+    { src: null, location: { en: "Photo coming soon", zh: "照片待添加" } },
+    { src: null, location: { en: "Photo coming soon", zh: "照片待添加" } },
+    { src: null, location: { en: "Photo coming soon", zh: "照片待添加" } }
+  ],
+
   skills: [
     { name: { en: "Programming", zh: "编程语言" }, items: ["Python", "C/C++", "Go", "Java", "JavaScript", "HTML/CSS"] },
     { name: { en: "AI Frameworks", zh: "AI 框架与工具" }, items: ["PyTorch", "TensorFlow", "Hugging Face", "LangChain", "LangGraph", "Scikit-learn"] },

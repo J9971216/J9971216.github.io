@@ -51,11 +51,14 @@
         (item) => `
         <div class="timeline-item">
           <div class="timeline-header">
-            <div>
-              <h3 class="timeline-title">${item.company[lang]} ${
+            <div class="timeline-header-main">
+              <div class="timeline-avatar" aria-hidden="true">${item.company.en.trim()[0]}</div>
+              <div>
+                <h3 class="timeline-title">${item.company[lang]} ${
           item.current ? '<span class="badge">' + (lang === "zh" ? "进行中" : "Current") + "</span>" : ""
         }</h3>
-              <p class="timeline-role">${item.role[lang]}</p>
+                <p class="timeline-role">${item.role[lang]}</p>
+              </div>
             </div>
             <div class="timeline-meta">
               <span>${item.location[lang]}</span>
@@ -66,6 +69,24 @@
             .map((b) => `<li>${b[lang]}</li>`)
             .join("")}</ul>
         </div>`
+      )
+      .join("");
+  }
+
+  function renderTravel(lang) {
+    const container = document.getElementById("travel-list");
+    if (!container) return;
+    container.innerHTML = SITE_CONTENT.travel
+      .map(
+        (photo) => `
+        <figure class="travel-tile">
+          ${
+            photo.src
+              ? `<img src="${photo.src}" alt="${photo.location[lang]}" loading="lazy" />`
+              : `<div class="travel-placeholder"></div>`
+          }
+          <figcaption>${photo.location[lang]}</figcaption>
+        </figure>`
       )
       .join("");
   }
@@ -107,6 +128,7 @@
     renderEducation(lang);
     renderExperience(lang);
     renderProjects(lang);
+    renderTravel(lang);
     renderSkills(lang);
     langToggle.textContent = lang === "zh" ? "EN" : "中文";
     document.documentElement.lang = lang === "zh" ? "zh-CN" : "en";
