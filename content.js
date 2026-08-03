@@ -37,13 +37,13 @@ const SITE_CONTENT = {
   experience: [
     {
       company: { en: "Amazon", zh: "亚马逊 Amazon" },
-      role: { en: "SDE Intern (Summer)", zh: "软件开发工程师实习生（暑期）" },
+      role: { en: "Software Development Engineer Intern (Summer)", zh: "软件开发工程师实习生（暑期）" },
       location: { en: "New York, NY · On-site", zh: "纽约 · 现场办公" },
       date: { en: "Jun 2026 – Aug 2026", zh: "2026年6月 – 8月" },
       current: true,
       bullets: [
-        { en: "[Project description — to be added]", zh: "【项目描述 —— 待补充】" },
-        { en: "[Tech stack and impact — to be added]", zh: "【技术栈与成果 —— 待补充】" }
+        { en: "[Project description: to be added]", zh: "【项目描述：待补充】" },
+        { en: "[Tech stack and impact: to be added]", zh: "【技术栈与成果：待补充】" }
       ]
     },
     {
@@ -89,7 +89,7 @@ const SITE_CONTENT = {
       bullets: [
         { en: "Built a Docker-based training stack reproducing motion generation baselines (MDM, FLAME); curated 70K+ motion sequences and 50K+ human preference annotations.", zh: "基于 Docker 构建训练集群，复现 MDM、FLAME 等动作生成基线模型；清洗整理 7 万+ 动作序列与 5 万+ 人类偏好标注。" },
         { en: "Developed MotionCritic, a Transformer-based reward model achieving 85%+ agreement with human evaluators.", zh: "开发基于 Transformer 的奖励模型 MotionCritic，与人类评估者的一致性达 85% 以上。" },
-        { en: "First to apply RLHF (PPO + ReFL) to motion diffusion models, aligning generation with human perception in 800 fine-tuning steps — co-authored paper accepted at ICLR 2025.", zh: "首次将 RLHF（PPO + ReFL）引入动作扩散模型，仅需 800 步微调即实现生成结果与人类感知对齐 —— 相关成果发表于 ICLR 2025。" }
+        { en: "First to apply RLHF (PPO + ReFL) to motion diffusion models, aligning generation with human perception in 800 fine-tuning steps. Co-authored paper accepted at ICLR 2025.", zh: "首次将 RLHF（PPO + ReFL）引入动作扩散模型，仅需 800 步微调即实现生成结果与人类感知对齐。相关成果发表于 ICLR 2025。" }
       ]
     }
   ],
@@ -98,7 +98,7 @@ const SITE_CONTENT = {
     {
       title: { en: "MotionCritic & RLHF for Motion Diffusion", zh: "MotionCritic 与动作扩散模型的 RLHF 对齐" },
       tag: { en: "ICLR 2025", zh: "ICLR 2025" },
-      desc: { en: "A Transformer-based reward model paired with PPO/ReFL optimization to align text-to-motion generation with human perceptual judgment — 85%+ agreement with human evaluators in just 800 fine-tuning steps.", zh: "基于 Transformer 的奖励模型，结合 PPO / ReFL 优化算法，将文本到动作生成与人类感知对齐 —— 仅需 800 步微调即可达到 85% 以上的人类评估一致性。" },
+      desc: { en: "A Transformer-based reward model paired with PPO/ReFL optimization to align text-to-motion generation with human perceptual judgment, reaching 85%+ agreement with human evaluators in just 800 fine-tuning steps.", zh: "基于 Transformer 的奖励模型，结合 PPO / ReFL 优化算法，将文本到动作生成与人类感知对齐，仅需 800 步微调即可达到 85% 以上的人类评估一致性。" },
       tags: ["PyTorch", "RLHF", "Diffusion Models", "Transformer"]
     },
     {
@@ -110,7 +110,7 @@ const SITE_CONTENT = {
     {
       title: { en: "Video Ad Generation Pipeline", zh: "视频广告生成流水线" },
       tag: { en: "OOIN Media", zh: "欧印传媒" },
-      desc: { en: "An end-to-end multi-modal agent pipeline turning text concepts into fully synthesized video ads — Gemini, Veo 3, and Remotion orchestrated across a VRAM-aware, distributed multi-GPU platform processing 300+ videos/hour.", zh: "端到端多模态智能体流水线，将文本创意转化为完整视频广告 —— 整合 Gemini、Veo 3 与 Remotion，运行于显存感知的分布式多 GPU 平台，单机处理能力达 300+ 视频/小时。" },
+      desc: { en: "An end-to-end multi-modal agent pipeline turning text concepts into fully synthesized video ads, orchestrating Gemini, Veo 3, and Remotion across a VRAM-aware, distributed multi-GPU platform processing 300+ videos/hour.", zh: "端到端多模态智能体流水线，将文本创意转化为完整视频广告，整合 Gemini、Veo 3 与 Remotion，运行于显存感知的分布式多 GPU 平台，单机处理能力达 300+ 视频/小时。" },
       tags: ["LangGraph", "Gemini", "Veo 3", "Distributed Systems"]
     }
   ],
