@@ -36,20 +36,24 @@ const SITE_CONTENT = {
 
   experience: [
     {
-      company: { en: "Amazon", zh: "亚马逊 Amazon" },
-      role: { en: "Software Development Engineer Intern (Summer)", zh: "软件开发工程师实习生（暑期）" },
+      logo: "assets/logos/amazon.svg",
+      company: { en: "Amazon Web Services (AWS)", zh: "亚马逊云科技 Amazon Web Services (AWS)" },
+      role: { en: "Software Development Engineer Intern (Summer 2026)", zh: "软件开发工程师实习生（2026 暑期）" },
       location: { en: "New York, NY · On-site", zh: "纽约 · 现场办公" },
       date: { en: "Jun 2026 – Aug 2026", zh: "2026年6月 – 8月" },
       current: true,
       bullets: [
-        { en: "[Project description: to be added]", zh: "【项目描述：待补充】" },
-        { en: "[Tech stack and impact: to be added]", zh: "【技术栈与成果：待补充】" }
+        { en: "Built an automated data-governance system on Apache Airflow that detects orphaned datasets across a large AWS Redshift and Glue warehouse by computing a dependency graph of live consumers, surfacing 2,000+ orphaned tables (100+ TB reclaimable) per monthly run, replacing what previously required manual lineage tracing across hundreds of pipelines.", zh: "在 Apache Airflow 上构建自动化数据治理系统，通过计算活跃消费者的依赖关系图，检测 AWS Redshift 与 Glue 数据仓库中的孤立数据集，每月运行可发现 2000+ 张孤立表（可回收存储 100+ TB），此前这项工作需要跨数百条流水线手动追溯血缘。" },
+        { en: "Integrated an LLM agent on AWS Bedrock that triages each run into a confident-drop set (91% of cases) and a human-review set with plain-language rationales. The system only proposes cleanup via change reviews and SQL, never deletes data autonomously.", zh: "接入基于 AWS Bedrock 的 LLM 智能体，将每次运行结果分诊为高置信度可删除集合（约 91%）与需人工复核集合，并附带通俗易懂的判断依据。系统仅通过变更评审和 SQL 提出清理建议，绝不自动删除数据。" },
+        { en: "Delivered the project on a newly adopted Airflow platform, partnering with my mentor and teammates to validate infrastructure and permissions, then led the next phase: a reversible grace-period deprecation design for safely recoverable cleanup.", zh: "在团队新采用的 Airflow 平台上交付该项目，与导师和同事密切协作完成平台上手、基础设施与权限校验，并主导下一阶段工作：可安全恢复的宽限期下线设计。" },
+        { en: "Contributed to the team's autonomous code-review agent beyond my own project, diagnosing and fixing several worker defects.", zh: "在自己项目之外，也为团队的自动化代码评审智能体（一个自动认领任务并生成代码评审的守护进程）做出贡献，诊断并修复了多个 worker 缺陷。" }
       ]
     },
     {
+      logo: "assets/logos/ooin.png",
       company: { en: "OOIN Media", zh: "欧印（上海）传媒科技有限公司" },
       role: { en: "AI Software Engineer Intern", zh: "AI 软件开发实习生" },
-      location: { en: "New York, NY", zh: "上海，中国" },
+      location: { en: "New York, NY · Remote", zh: "上海，中国 · 远程" },
       date: { en: "Nov 2025 – Feb 2026", zh: "2025年11月 – 2026年2月" },
       bullets: [
         { en: "Architected a multi-modal AI video generation agent using LangGraph, integrating Gemini, sketch-based visual generation, and Veo 3 into an end-to-end script-to-video pipeline, with Remotion for programmatic scene rendering.", zh: "基于 LangGraph 构建多模态视频生成智能体，整合 Gemini、草图视觉生成模型与 Veo 3，实现“脚本到成片”的端到端流水线，并通过 Remotion 实现程序化场景渲染。" },
@@ -58,9 +62,10 @@ const SITE_CONTENT = {
       ]
     },
     {
+      logo: "assets/logos/neurovisionaries.png",
       company: { en: "The NeuroVisionaries", zh: "神览科技（北京）有限公司" },
       role: { en: "Co-Founder & Technical Lead", zh: "联合创始人 & 技术负责人" },
-      location: { en: "Beijing, China", zh: "北京，中国" },
+      location: { en: "Beijing, China · Hybrid", zh: "北京，中国 · 混合办公" },
       date: { en: "Feb 2024 – Present", zh: "2024年2月 – 至今" },
       current: true,
       bullets: [
@@ -71,9 +76,10 @@ const SITE_CONTENT = {
       ]
     },
     {
+      logo: "assets/logos/bigai.png",
       company: { en: "Beijing Institute for General Artificial Intelligence (BIGAI)", zh: "北京通用人工智能研究院 BIGAI" },
       role: { en: "AI Research Assistant Intern", zh: "AI 助理研究实习生" },
-      location: { en: "Beijing, China", zh: "北京，中国" },
+      location: { en: "Beijing, China · Hybrid", zh: "北京，中国 · 混合办公" },
       date: { en: "Oct 2024 – May 2025", zh: "2024年10月 – 2025年5月" },
       bullets: [
         { en: "Built a UE5 indoor simulation pipeline with an extended gRPC API for synchronized audio-visual data collection.", zh: "基于 UE5 搭建室内仿真环境，扩展 gRPC API 实现音视频同步采集。" },
@@ -82,9 +88,10 @@ const SITE_CONTENT = {
       ]
     },
     {
+      logo: "assets/logos/cfcs.png",
       company: { en: "Center on Frontiers of Computing Studies, PKU", zh: "北京大学前沿计算中心 CFCS" },
       role: { en: "Student Research Assistant", zh: "学生研究助理" },
-      location: { en: "Beijing, China", zh: "北京，中国" },
+      location: { en: "Beijing, China · Hybrid", zh: "北京，中国 · 混合办公" },
       date: { en: "Feb 2023 – Jun 2024", zh: "2023年2月 – 2024年6月" },
       bullets: [
         { en: "Built a Docker-based training stack reproducing motion generation baselines (MDM, FLAME); curated 70K+ motion sequences and 50K+ human preference annotations.", zh: "基于 Docker 构建训练集群，复现 MDM、FLAME 等动作生成基线模型；清洗整理 7 万+ 动作序列与 5 万+ 人类偏好标注。" },
@@ -117,7 +124,7 @@ const SITE_CONTENT = {
 
   // Placeholder tiles until real photos + captions are added.
   travel: [
-    { src: null, location: { en: "Photo coming soon", zh: "照片待添加" } },
+    { src: "assets/travel/travel-01.jpg", location: { en: "Magic Kingdom, Orlando", zh: "奥兰多 · 魔法王国" } },
     { src: null, location: { en: "Photo coming soon", zh: "照片待添加" } },
     { src: null, location: { en: "Photo coming soon", zh: "照片待添加" } },
     { src: null, location: { en: "Photo coming soon", zh: "照片待添加" } },

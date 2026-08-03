@@ -52,7 +52,11 @@
         <div class="timeline-item">
           <div class="timeline-header">
             <div class="timeline-header-main">
-              <div class="timeline-avatar" aria-hidden="true">${item.company.en.trim()[0]}</div>
+              ${
+                item.logo
+                  ? `<img class="timeline-logo" src="${item.logo}" alt="${item.company[lang]}" />`
+                  : `<div class="timeline-avatar" aria-hidden="true">${item.company.en.trim()[0]}</div>`
+              }
               <div>
                 <h3 class="timeline-title">${item.company[lang]} ${
           item.current ? '<span class="badge">' + (lang === "zh" ? "进行中" : "Current") + "</span>" : ""
