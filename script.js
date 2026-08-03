@@ -20,9 +20,12 @@
         (item) => `
         <div class="timeline-item">
           <div class="timeline-header">
-            <div>
-              <h3 class="timeline-title">${item.school[lang]}</h3>
-              <p class="timeline-role">${item.degree[lang]}</p>
+            <div class="timeline-header-main">
+              ${item.logo ? `<img class="timeline-logo" src="${item.logo}" alt="${item.school[lang]}" />` : ""}
+              <div>
+                <h3 class="timeline-title">${item.school[lang]}</h3>
+                <p class="timeline-role">${item.degree[lang]}</p>
+              </div>
             </div>
             <div class="timeline-meta">
               <span>${item.location[lang]}</span>

@@ -4,6 +4,7 @@
 const SITE_CONTENT = {
   education: [
     {
+      logo: "assets/logos/nyu.svg",
       school: { en: "New York University, Tandon School of Engineering", zh: "纽约大学 坦登工程学院" },
       degree: { en: "Master of Science in Computer Science", zh: "计算机科学 理学硕士" },
       location: { en: "New York, NY", zh: "纽约，美国" },
@@ -13,6 +14,7 @@ const SITE_CONTENT = {
       ]
     },
     {
+      logo: "assets/logos/pku.svg",
       school: { en: "Peking University, School of Electronics Engineering and Computer Science", zh: "北京大学 信息科学技术学院" },
       degree: { en: "Bachelor of Science in Computer Science and Technology", zh: "计算机科学与技术 理学学士" },
       location: { en: "Beijing, China", zh: "北京，中国" },
@@ -23,6 +25,7 @@ const SITE_CONTENT = {
       ]
     },
     {
+      logo: "assets/logos/pku.svg",
       school: { en: "Peking University, School of Arts", zh: "北京大学 艺术学院" },
       degree: { en: "Bachelor of Arts in Theory and History of Art", zh: "艺术史论 艺术学学士" },
       location: { en: "Beijing, China", zh: "北京，中国" },
