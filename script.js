@@ -98,17 +98,19 @@
   function renderProjects(lang) {
     const container = document.getElementById("projects-list");
     container.innerHTML = SITE_CONTENT.projects
-      .map(
-        (p) => `
-        <article class="project-card">
+      .map((p) => {
+        const tag = p.link ? "a" : "article";
+        const linkAttrs = p.link ? `href="${p.link}" target="_blank" rel="noopener"` : "";
+        return `
+        <${tag} class="project-card" ${linkAttrs}>
           <span class="project-tag">${p.tag[lang]}</span>
           <h3 class="project-title">${p.title[lang]}</h3>
           <p class="project-desc">${p.desc[lang]}</p>
           <div class="project-chips">${p.tags
             .map((t) => `<span class="chip">${t}</span>`)
             .join("")}</div>
-        </article>`
-      )
+        </${tag}>`;
+      })
       .join("");
   }
 

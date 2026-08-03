@@ -45,8 +45,7 @@ const SITE_CONTENT = {
       bullets: [
         { en: "Built an automated data-governance system on Apache Airflow that detects orphaned datasets across a large AWS Redshift and Glue warehouse by computing a dependency graph of live consumers, surfacing 2,000+ orphaned tables (100+ TB reclaimable) per monthly run, replacing what previously required manual lineage tracing across hundreds of pipelines.", zh: "在 Apache Airflow 上构建自动化数据治理系统，通过计算活跃消费者的依赖关系图，检测 AWS Redshift 与 Glue 数据仓库中的孤立数据集，每月运行可发现 2000+ 张孤立表（可回收存储 100+ TB），此前这项工作需要跨数百条流水线手动追溯血缘。" },
         { en: "Integrated an LLM agent on AWS Bedrock that triages each run into a confident-drop set (91% of cases) and a human-review set with plain-language rationales. The system only proposes cleanup via change reviews and SQL, never deletes data autonomously.", zh: "接入基于 AWS Bedrock 的 LLM 智能体，将每次运行结果分诊为高置信度可删除集合（约 91%）与需人工复核集合，并附带通俗易懂的判断依据。系统仅通过变更评审和 SQL 提出清理建议，绝不自动删除数据。" },
-        { en: "Delivered the project on a newly adopted Airflow platform, then led the next phase: a reversible grace-period deprecation design for safely recoverable cleanup.", zh: "在团队新采用的 Airflow 平台上交付该项目，并主导下一阶段工作：可安全恢复的宽限期下线设计。" },
-        { en: "Contributed to the team's autonomous code-review agent beyond my own project, diagnosing and fixing several worker defects.", zh: "在自己项目之外，也为团队的自动化代码评审智能体（一个自动认领任务并生成代码评审的守护进程）做出贡献，诊断并修复了多个 worker 缺陷。" }
+        { en: "Contributed beyond my own project to the team's autonomous code-review agent by diagnosing and fixing several worker defects.", zh: "在自己项目之外参与团队的自动化代码评审智能体，诊断并修复了多个 worker 缺陷。" }
       ]
     },
     {
@@ -105,12 +104,14 @@ const SITE_CONTENT = {
     {
       title: { en: "MotionCritic & RLHF for Motion Diffusion", zh: "MotionCritic 与动作扩散模型的 RLHF 对齐" },
       tag: { en: "ICLR 2025", zh: "ICLR 2025" },
+      link: "https://motioncritic.github.io/",
       desc: { en: "A Transformer-based reward model paired with PPO/ReFL optimization to align text-to-motion generation with human perceptual judgment, reaching 85%+ agreement with human evaluators in just 800 fine-tuning steps.", zh: "基于 Transformer 的奖励模型，结合 PPO / ReFL 优化算法，将文本到动作生成与人类感知对齐，仅需 800 步微调即可达到 85% 以上的人类评估一致性。" },
       tags: ["PyTorch", "RLHF", "Diffusion Models", "Transformer"]
     },
     {
       title: { en: "Multi-Agent Research Assistant", zh: "多智能体科研助手" },
       tag: { en: "The NeuroVisionaries", zh: "神览科技" },
+      link: "https://www.somadisk.com/",
       desc: { en: "A LangGraph-powered research assistant combining Q&A, document drafting, and PubMed integration, with a hybrid RAG backend and anti-hallucination writing engine for citation-grounded output.", zh: "基于 LangGraph 的科研助手，集问答、文档撰写与 PubMed 集成于一体，配备混合 RAG 架构与反幻觉写作引擎，确保输出强引用对齐。" },
       tags: ["LangGraph", "RAG", "PostgreSQL", "FastAPI"]
     },
@@ -125,8 +126,8 @@ const SITE_CONTENT = {
   // Placeholder tiles until real photos + captions are added.
   travel: [
     { src: "assets/travel/travel-01.jpg", location: { en: "Magic Kingdom, Orlando", zh: "奥兰多 · 魔法王国" } },
-    { src: null, location: { en: "Photo coming soon", zh: "照片待添加" } },
-    { src: null, location: { en: "Photo coming soon", zh: "照片待添加" } },
+    { src: "assets/travel/travel-02.jpg", location: { en: "Machu Picchu, Peru", zh: "秘鲁 · 马丘比丘" } },
+    { src: "assets/travel/travel-03.jpg", location: { en: "Pyramids of Giza, Egypt", zh: "埃及 · 吉萨金字塔" } },
     { src: null, location: { en: "Photo coming soon", zh: "照片待添加" } },
     { src: null, location: { en: "Photo coming soon", zh: "照片待添加" } },
     { src: null, location: { en: "Photo coming soon", zh: "照片待添加" } }
