@@ -78,7 +78,7 @@ const SITE_CONTENT = {
       logo: "assets/logos/bigai.png",
       company: { en: "Beijing Institute for General Artificial Intelligence (BIGAI)", zh: "北京通用人工智能研究院 BIGAI" },
       role: { en: "AI Research Assistant Intern", zh: "AI 助理研究实习生" },
-      location: { en: "Beijing, China · Hybrid", zh: "北京，中国 · 混合办公" },
+      location: { en: "Beijing, China · On-site", zh: "北京，中国 · 现场办公" },
       date: { en: "Oct 2024 – May 2025", zh: "2024年10月 – 2025年5月" },
       bullets: [
         { en: "Built a UE5 indoor simulation pipeline with an extended gRPC API for synchronized audio-visual data collection.", zh: "基于 UE5 搭建室内仿真环境，扩展 gRPC API 实现音视频同步采集。" },
@@ -90,7 +90,7 @@ const SITE_CONTENT = {
       logo: "assets/logos/cfcs.png",
       company: { en: "Center on Frontiers of Computing Studies, PKU", zh: "北京大学前沿计算中心 CFCS" },
       role: { en: "Student Research Assistant", zh: "学生研究助理" },
-      location: { en: "Beijing, China · Hybrid", zh: "北京，中国 · 混合办公" },
+      location: { en: "Beijing, China · On-site", zh: "北京，中国 · 现场办公" },
       date: { en: "Feb 2023 – Jun 2024", zh: "2023年2月 – 2024年6月" },
       bullets: [
         { en: "Built a Docker-based training stack reproducing motion generation baselines (MDM, FLAME); curated 70K+ motion sequences and 50K+ human preference annotations.", zh: "基于 Docker 构建训练集群，复现 MDM、FLAME 等动作生成基线模型；清洗整理 7 万+ 动作序列与 5 万+ 人类偏好标注。" },
